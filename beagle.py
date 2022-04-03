@@ -1,31 +1,3 @@
-"""
-Mask R-CNN
-Train on the toy bottle dataset and implement color splash effect.
-
-Copyright (c) 2018 Matterport, Inc.
-Licensed under the MIT License (see LICENSE for details)
-Written by Waleed Abdulla
-
-------------------------------------------------------------
-
-Usage: import the module (see Jupyter notebooks for examples), or run from
-       the command line as such:
-
-    # Train a new model starting from pre-trained COCO weights
-    python3 beagle.py train --dataset=path/to/dataset --weights=coco
-
-    # Resume training a model that you had trained earlier
-    python3 beagle.py train --dataset=/path/to/dataset --weights=last
-
-    # Train a new model starting from ImageNet weights
-    python3 beagle.py train --dataset=/path/to/dataset --weights=imagenet
-
-    # Apply color splash to an image
-    python3 beagle.py splash --weights=/path/to/weights/file.h5 --image=<URL or path to file>
-
-    # Apply color splash to video using the last weights you trained
-    python3 beagle.py splash --weights=last --video=<URL or path to file>
-"""
 
 import os
 import sys
@@ -52,9 +24,9 @@ COCO_WEIGHTS_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
 # through the command line argument --logs
 DEFAULT_LOGS_DIR = os.path.join(ROOT_DIR, "logs")
 
-############################################################
+
 #  Configurations
-############################################################
+
 
 
 class CustomConfig(Config):
@@ -78,9 +50,9 @@ class CustomConfig(Config):
     DETECTION_MIN_CONFIDENCE = 0.9
 
 
-############################################################
+
 #  Dataset
-############################################################
+
 
 class CustomDataset(utils.Dataset):
 
@@ -270,9 +242,9 @@ def detect_and_color_splash(model, image_path=None, video_path=None):
         vwriter.release()
     print("Saved to ", file_name)
 
-############################################################
+
 #  Training
-############################################################
+
 
 if __name__ == '__main__':
     import argparse
