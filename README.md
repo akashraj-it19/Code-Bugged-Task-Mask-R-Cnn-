@@ -9,3 +9,6 @@ Mask R-CNN is an object detection model based on deep convolutional neural netwo
 There is a total number of 100 beagle images in the dataset which I scraped from Google Image. 75 images are used for training and 25 images are used for validation.
 
 I used VGG Image Annotator to annotate the training and validation images.
+
+
+![d](https://user-images.githubusercontent.com/53815075/161554715-8cefba35-e969-4ff6-8e1b-849267578c1b.png)
