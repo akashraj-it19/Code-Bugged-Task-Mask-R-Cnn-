@@ -11,4 +11,5 @@ There is a total number of 100 beagle images in the dataset which I scraped from
 I used VGG Image Annotator to annotate the training and validation images.
 
 
-![d](https://user-images.githubusercontent.com/53815075/161554715-8cefba35-e969-4ff6-8e1b-849267578c1b.png)
+
+![download](https://user-images.githubusercontent.com/53815075/161555046-a9444ee6-b8c2-4b76-b26a-65264abf6dbd.png)
